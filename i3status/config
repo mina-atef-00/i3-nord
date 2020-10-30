@@ -1,0 +1,53 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        output_format = i3bar
+        colors= true
+        color_good = "#d8dee9"
+        color_degraded = "#d8dee9"
+        color_bad = "#d8dee9"
+        markup = pango
+        interval = 5
+}
+
+order += "battery all"
+order += "tztime local"
+
+
+volume master {
+        format = "<span background='#2E3440'> ♪: %volume </span>"
+        
+        format_muted = "<span background='#2E3440'> ♪: muted (%volume) </span>"
+        device = "pulse"
+}
+
+wireless _first_ {
+        format_up = "<span background='#2E3440'> %essid </span>"
+        format_down = ""
+}
+
+ethernet _first_ {
+        format_up = "<span background='#2E3440'> %ip </span>"
+        format_down = ""
+}
+
+battery all {
+        format = "<span background='#2E3440'>%status %percentage</span>"
+        integer_battery_capacity = true
+        color_good = "#d8dee9"
+        color_degraded = "#d8dee9"
+        color_bad = "#d8dee9"
+}
+
+
+tztime local {
+        format = "<span background='#2E3440'> %time </span>"
+		format_time = "%a %d %b %I:%M %p"
+      
+}
