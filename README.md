@@ -19,5 +19,3 @@
 
 - To configure QT apps I use Kvantum and qt5ct.
 - I mostly use lxde/lxqt cuz they get the job done and are very light on resources and dependencies. I prefer their apps to the xfce apps.
-
-![wallpaper.jpg](:/6ecdc23c9c5c421580eb406a97e60242)
