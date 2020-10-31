@@ -181,11 +181,11 @@ bindsym $mod+Ctrl+r restart
 
 
 #WALLPAPER
-exec --no-startup-id betterlockscreen -w dimblur
+exec --no-startup-id betterlockscreen -w
 
 
 #APPLICATION SHORTCUTS
-bindsym $mod+Shift+n exec firefox
+bindsym $mod+Shift+n exec brave
 bindsym $mod+Shift+d exec discord
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+i exec leafpad ~/.config/i3/config
