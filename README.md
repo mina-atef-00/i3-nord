@@ -19,3 +19,5 @@
 
 - To configure QT apps I use Kvantum and qt5ct.
 - I mostly use lxde/lxqt cuz they get the job done and are very light on resources and dependencies. I prefer their apps to the xfce apps.
+- **important note:** If you want to change scaling or disable it, remove text from .Xresources and remove the line starting with "xrdb merge" from xinitrc
+- **another imp. note:** I'm using zsh, if you're using bash; copy the text from .zprofile to .bash_profile, .zshrc to .bashrc
