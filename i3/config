@@ -14,7 +14,7 @@ gaps outer 0
                       
 set $mod Mod4   
 
-font pango:lato 11  
+font pango: Lato 11  
 
 
 #LOCK SHORTCUT
@@ -185,7 +185,7 @@ exec --no-startup-id betterlockscreen -w
 
 
 #APPLICATION SHORTCUTS
-bindsym $mod+Shift+n exec brave
+bindsym $mod+Shift+n exec firefox
 bindsym $mod+Shift+d exec discord
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+i exec leafpad ~/.config/i3/config
@@ -197,14 +197,15 @@ bindsym $mod+Shift+j exec /opt/appimages/Joplin.AppImage
 
 
 #STARTUP (CAN CHANGE FROM LX SETTINGS)
-exec --no-startup-id flameshot
-exec --no-startup-id blueman-applet
-exec --no-startup-id nm-applet
-exec --no-startup-id pa-applet
-exec --no-startup-id clipit
+#exec --no-startup-id flameshot
+#exec --no-startup-id blueman-applet
+#exec --no-startup-id nm-applet
+#exec --no-startup-id pa-applet
+#exec --no-startup-id clipit
 exec_always /usr/bin/dunst
-exec --no-startup-id /usr/bin/lxpolkit            
-                    
+exec --no-startup-id /usr/bin/lxpolkit
+exec --no-startup-id xinput set-prop 13 331 1
+exec --no-startup-id xinput set-prop 13 311 1               
 
 set $bg-color 	         #88c0d0
 set $inactive-bg-color   #2E3440
