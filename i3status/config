@@ -16,29 +16,32 @@ general {
         interval = 5
 }
 
+order += "ethernet _first_"
+order += "wireless _first_"
+order += "volume master"
 order += "battery all"
 order += "tztime local"
 
 
 volume master {
-        format = "<span background='#2E3440'> ♪: %volume </span>"
+        format = "<span background='#4c566a'> ♪: %volume </span>"
         
-        format_muted = "<span background='#2E3440'> ♪: muted (%volume) </span>"
+        format_muted = "<span background='#4c566a'> ♪: muted (%volume) </span>"
         device = "pulse"
 }
 
 wireless _first_ {
-        format_up = "<span background='#2E3440'> %essid </span>"
+        format_up = "<span background='#4c566a'> %essid </span>"
         format_down = ""
 }
 
 ethernet _first_ {
-        format_up = "<span background='#2E3440'> %ip </span>"
+        format_up = "<span background='#4c566a'> %ip </span>"
         format_down = ""
 }
 
 battery all {
-        format = "<span background='#2E3440'>%status %percentage</span>"
+        format = "<span background='#4c566a'> %status %percentage </span>"
         integer_battery_capacity = true
         color_good = "#d8dee9"
         color_degraded = "#d8dee9"
@@ -47,7 +50,7 @@ battery all {
 
 
 tztime local {
-        format = "<span background='#2E3440'> %time </span>"
+        format = "<span background='#4c566a'> %time </span>"
 		format_time = "%a %d %b %I:%M %p"
       
 }
