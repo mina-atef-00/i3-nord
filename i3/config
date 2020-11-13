@@ -1,8 +1,8 @@
 #1- to set a variable: set $nigga_var nigga_val #mmkn string 2aw int aw 2ay 7aga
 #2- to force a window to open in a cetain workspace: on terminal :xprop: and press on app, then copy the second string from class, b3d keda fel config: assign [class="copied"] workspace
 #3- to detect key (on terminal): xev
-                            
-        
+                               
+     
 #i3-gaps
 #Needed for i3-gaps
 hide_edge_borders both
@@ -197,6 +197,7 @@ bindsym $mod+Shift+j exec /opt/appimages/Joplin.AppImage
 
 
 #STARTUP (CAN CHANGE FROM LX SETTINGS)
+exec --no-startup-id xrandr --dpi 120
 #exec --no-startup-id flameshot
 #exec --no-startup-id blueman-applet
 #exec --no-startup-id nm-applet
@@ -204,8 +205,8 @@ bindsym $mod+Shift+j exec /opt/appimages/Joplin.AppImage
 #exec --no-startup-id clipit
 exec_always /usr/bin/dunst
 exec --no-startup-id /usr/bin/lxpolkit
-exec_always --no-startup-id xinput set-prop 10 331 1
-exec_always --no-startup-id xinput set-prop 10 311 1            
+exec_always --no-startup-id xinput set-prop 13 331 1
+exec_always --no-startup-id xinput set-prop 1 311 1            
 
 set $bg-color 	         #88c0d0
 set $inactive-bg-color   #2E3440
