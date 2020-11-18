@@ -8,7 +8,7 @@
 
 general {
         output_format = i3bar
-        colors= true
+        colors= false
         color_good = "#d8dee9"
         color_degraded = "#d8dee9"
         color_bad = "#d8dee9"
