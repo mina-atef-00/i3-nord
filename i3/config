@@ -185,7 +185,7 @@ exec --no-startup-id betterlockscreen -w
 
 
 #APPLICATION SHORTCUTS
-bindsym $mod+Shift+n exec firefox
+bindsym $mod+Shift+n exec brave
 bindsym $mod+Shift+d exec discord
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+i exec leafpad ~/.config/i3/config
@@ -199,14 +199,15 @@ bindsym $mod+Shift+j exec /opt/appimages/Joplin.AppImage
 #STARTUP (CAN CHANGE FROM LX SETTINGS)
 exec --no-startup-id xrandr --dpi 120
 #exec --no-startup-id flameshot
+#exec_always --no-startup-id xffce-power-manager
 #exec --no-startup-id blueman-applet
 #exec --no-startup-id nm-applet
 #exec --no-startup-id pa-applet
 #exec --no-startup-id clipit
 exec_always /usr/bin/dunst
 exec --no-startup-id /usr/bin/lxpolkit
-exec_always --no-startup-id xinput set-prop 13 331 1
-exec_always --no-startup-id xinput set-prop 1 311 1            
+exec_always --no-startup-id xinput set-prop 10 331 1
+exec_always --no-startup-id xinput set-prop 10 311 1            
 
 set $bg-color 	         #88c0d0
 set $inactive-bg-color   #2E3440
